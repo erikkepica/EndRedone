@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "end-redone",
+	"version": "${version}",
+	"name": "End Redone",
+	"description": "A mod that reworks the end!",
+	"authors": [
+		"Kepeca"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/end-redone/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kepeca.endredone.EndRedone"
+		],
+		"client": [
+			"net.kepeca.endredone.EndRedoneClient"
+		],
+		"fabric-datagen": [
+			"net.kepeca.endredone.EndRedoneDataGenerator"
+		]
+	},
+	"mixins": [
+		"end-redone.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
